@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#080b12"><title>Admin | THE ALPHA X</title><link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./admin.css"><script src="./admin.js" defer></script></head>
+<body class="admin-body">
+  <header class="admin-header"><a class="brand" href="./"><span class="brand-mark">AX</span><span>THE ALPHA <b>X</b></span></a><span class="admin-label">SECURE ADMIN AREA</span><a class="admin-back" href="./">← PUBLIC SITE</a></header>
+  <main class="admin-main">
+    <section id="login-panel" class="login-panel">
+      <div class="section-kicker">ADMIN ACCESS / 01</div><h1>Welcome<br><span>back.</span></h1><p>Sign in with your administrator account to review applications.</p>
+      <form id="login-form"><label class="admin-field">USERNAME<input name="username" autocomplete="username" required maxlength="80"></label><label class="admin-field">PASSWORD<input name="password" type="password" autocomplete="current-password" required maxlength="1024"></label><button class="button button-primary" type="submit"><span>SIGN IN</span><span aria-hidden="true">→</span></button><div id="login-message" class="admin-message" role="alert" hidden></div></form>
+      <small class="login-foot">Public admin sign-up is disabled.</small>
+    </section>
+    <section id="dashboard" hidden>
+      <div class="dashboard-top"><div><div class="section-kicker">ADMIN / APPLICATIONS</div><h1>Application<br><span>inbox.</span></h1></div><div class="dashboard-actions"><span id="signed-in-as" class="signed-in"></span><button id="logout-button" class="outline-button" type="button">SIGN OUT</button></div></div>
+      <div class="dashboard-toolbar"><div id="filter-tabs" class="filter-tabs" role="tablist" aria-label="Filter applications"><button type="button" data-filter="All" class="active">ALL</button><button type="button" data-filter="Pending">PENDING</button><button type="button" data-filter="Accepted">ACCEPTED</button><button type="button" data-filter="Rejected">REJECTED</button></div><button id="refresh-button" class="outline-button" type="button">↻ REFRESH</button></div>
+      <div id="dashboard-message" class="admin-message" role="status" hidden></div>
+      <div id="application-list" class="application-list" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer class="site-footer admin-footer"><a class="brand" href="./"><span class="brand-mark">AX</span><span>THE ALPHA <b>X</b></span></a><span>PRIVATE ADMIN WORKSPACE</span><a class="footer-admin" href="./">BACK TO SITE</a></footer>
+</body>
+</html>
