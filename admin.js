@@ -94,10 +94,6 @@ function renderApplication(app) {
   save.type = 'button';
   save.addEventListener('click', async () => {
     const nextStatus = status.value;
-    if (nextStatus !== app.status && !window.confirm(`Change ${app.full_name} from ${app.status} to ${nextStatus}?`)) {
-      status.value = app.status;
-      return;
-    }
     save.disabled = true;
     save.textContent = 'SAVING…';
     try {
