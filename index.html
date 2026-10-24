@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="More than a gang. We're a family. Apply to join THE ALPHA X gaming community.">
+  <title>THE ALPHA X | Stronger Together</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="THE ALPHA X home"><span class="brand-mark">AX</span><span>THE ALPHA <b>X</b></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a class="nav-apply" href="#apply">Apply <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="bubble-field" aria-hidden="true">
+        <span class="bubble bubble-1"></span><span class="bubble bubble-2"></span>
+        <span class="bubble bubble-3"></span><span class="bubble bubble-4"></span>
+        <span class="bubble bubble-5"></span><span class="bubble bubble-6"></span>
+        <span class="bubble bubble-7"></span><span class="bubble bubble-8"></span>
+      </div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="status-dot"></span> GAMING COMMUNITY · EST. 2026</div>
+        <h1>THE ALPHA<br><span>X</span></h1>
+        <p class="hero-tagline">MORE THAN A GANG.<br><strong>WE’RE A FAMILY.</strong></p>
+        <p class="hero-copy">Good games. Better people. Find your squad and make every match count.</p>
+        <a class="button button-primary" href="#apply">JOIN OUR GANG <span aria-hidden="true">→</span></a>
+        <div class="hero-foot"><span>ROBLOX</span><i></i><span>MINECRAFT</span><i></i><span>GOOD VIBES</span></div>
+      </div>
+      <div class="hero-orbit" aria-hidden="true"><div class="orbit-ring"></div><div class="orbit-core"><svg class="wolf-emblem" viewBox="0 0 100 100" fill="none"><path d="M17 19 39 31 50 27 61 31 83 19 78 47 71 70 50 88 29 70 22 47 17 19Z"/><path d="m18 20 18 24 14 7 14-7 18-24M24 49l18-2 8 11 8-11 18 2M36 70l14-5 14 5M42 49l8 9 8-9"/><path d="m34 43 8 1M58 44l8-1"/></svg><span>AX</span></div><span class="orbit-label">PLAY AS ONE</span></div>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div class="section-kicker">01 / WHO WE ARE</div>
+      <div class="about-layout">
+        <h2>Different games.<br><span>One team.</span></h2>
+        <div class="about-copy"><p class="large-copy">We play together, grow together, and stand together.</p><p>THE ALPHA X is a friends-first gaming community built on teamwork, respect, and having a good time. Whether you’re building, exploring, or chasing the win, there’s a place for you here.</p><a class="text-link" href="#apply">FIND YOUR PLACE <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="value-row"><div><span>01</span><b>TEAM FIRST</b><p>Every win is better together.</p></div><div><span>02</span><b>GOOD ENERGY</b><p>Respect is part of the game.</p></div><div><span>03</span><b>ALWAYS GROWING</b><p>Bring your style. Build your skills.</p></div></div>
+    </section>
+
+    <section class="apply-section" id="apply">
+      <div class="section-wrap apply-layout">
+        <div class="apply-intro"><div class="section-kicker">02 / YOUR NEXT MOVE</div><h2>Ready to<br><span>join the team?</span></h2><p>Tell us a little about yourself and what you bring to the squad. Our admins will review your application.</p><div class="apply-note"><span class="note-icon">✳</span><span>Your WhatsApp number is only visible to authorized admins and is used to discuss your application.</span></div></div>
+        <form id="application-form" class="application-form" novalidate>
+          <div class="form-heading"><span>APPLICATION TO JOIN</span><span class="form-step">THE ALPHA X <b>·</b> 2026</span></div>
+          <div class="field-grid">
+            <label class="field field-wide"><span>FULL NAME <em>*</em></span><input name="fullName" autocomplete="name" maxlength="100" required placeholder="How should we call you?"><small class="field-error"></small></label>
+            <label class="field field-wide"><span>WHATSAPP NUMBER <em>*</em></span><input name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" maxlength="24" required placeholder="+91 98765 43210"><small class="field-hint">Include your country code, starting with +</small><small class="field-error"></small></label>
+            <label class="field"><span>FAVOURITE GAME <em>*</em></span><select name="favouriteGame" required><option value="">Choose a game</option><option>Roblox</option><option>Minecraft</option><option>Other</option></select><small class="field-error"></small></label>
+            <label class="field" id="other-game-field" hidden><span>GAME NAME <em>*</em></span><input name="otherGame" maxlength="60" placeholder="Which game?"><small class="field-error"></small></label>
+            <label class="field field-wide"><span>WHY DO YOU WANT TO JOIN? <em>*</em></span><textarea name="reason" rows="4" maxlength="1200" required placeholder="What makes this crew feel right for you?"></textarea><small class="field-error"></small></label>
+            <label class="field field-wide"><span>YOUR GAME SKILLS <small>(OPTIONAL)</small></span><textarea name="skills" rows="3" maxlength="1200" placeholder="Builder, strategist, explorer, clutch player…"></textarea><small class="field-error"></small></label>
+          </div>
+          <label class="honeypot" aria-hidden="true">Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label>
+          <div class="form-bottom"><p>By applying, you agree that an authorized admin may contact you about your application.</p><button class="button button-primary" type="submit"><span>SUBMIT APPLICATION</span><span aria-hidden="true">→</span></button></div>
+          <div id="form-message" class="form-message" role="status" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">AX</span><span>THE ALPHA <b>X</b></span></a><span>© 2026 THE ALPHA X | STRONGER TOGETHER.</span><a class="footer-admin" href="https://the-alpha-x-gang.harinash12346.chatgpt.site/admin">ADMIN</a></footer>
+</body>
+</html>
